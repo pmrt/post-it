@@ -1,0 +1,17 @@
+{
+	"name" : "post-it",
+	"title" : "Javascript Post-It",
+	"description" : "A Post-It board written in Javascript",
+	"keywords" : [
+			"javascript",
+			"postit",
+			"html"
+	],
+	"author" : "Pedro J. Martínez <pedrojmrt@gmail.com>",
+	"repository" : {
+		"type": "git",
+		 "url": "https://github.com/pmrt/post-it.git"
+	},
+	"main" : "main.js",
+	"version" : "0.0.0-pre"
+}
