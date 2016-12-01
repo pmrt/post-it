@@ -1,2 +1,3 @@
+# Prevent github to show wrong programming lang.
 src/view/css/* linguist-vendored
 src/view/*.html linguist-vendored
