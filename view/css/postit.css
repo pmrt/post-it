@@ -1,41 +1,32 @@
-* {
-	box-sizing: border-box;
-	color: white;
-	margin: 0;
+.post-it {
+	margin-top: 5%;
+	-webkit-box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						5px 10px 0px 0.5px rgba(241,247,175,0.7);
+	-moz-box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						5px 10px 0px 0.5px rgba(241,247,175,0.7);
+	box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						3px 6px 0px 0px rgba(241,247,175,0.7);
+	background: rgba(184,186,91,1);
+	background: -moz-linear-gradient(45deg, rgba(184,186,91,1) 0%, rgba(210,215,118,1) 28%, rgba(233,240,141,1) 52%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(184,186,91,1)), color-stop(28%, rgba(210,215,118,1)), color-stop(52%, rgba(233,240,141,1)));
+	background: -webkit-linear-gradient(45deg, rgba(184,186,91,1) 0%, rgba(210,215,118,1) 28%, rgba(233,240,141,1) 52%);
+	background: -o-linear-gradient(45deg, rgba(184,186,91,1) 0%, rgba(210,215,118,1) 28%, rgba(233,240,141,1) 52%);
+	background: -ms-linear-gradient(45deg, rgba(184,186,91,1) 0%, rgba(210,215,118,1) 28%, rgba(233,240,141,1) 52%);
+	background: linear-gradient(45deg, rgba(184,186,91,1) 0%, rgba(210,215,118,1) 28%, rgba(233,240,141,1) 52%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8ba5b', endColorstr='#e9f08d', GradientType=1 );
+	height: 200px;
+	width: 200px;
 }
 
-body {
- 	background-color: #5B4B71;
-}
+.post-it:hover {
+	-webkit-box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						5px 10px 0px 0.5px rgba(241,247,175,0.7),
+						0px 0px 14px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						5px 10px 0px 0.5px rgba(241,247,175,0.7),
+						0px 0px 14px 1px rgba(255,255,255,0.5);
+	box-shadow: inset 0px 15px 5px 0px rgb(232, 240, 141),
+						3px 6px 0px 0px rgba(241,247,175,0.7),
+						0px 0px 14px 1px rgba(255,255,255,0.5);
 
-#title {
-	margin: 2%;
-	text-align: center;
-	display: flex;
-	justify-content: flex-end;
-	align-items: baseline;
-}
-
-#title h1 {
-	font-style: italic;
-	text-shadow: 0px 1px 8px rgba(2, 2, 2, 0.89);
-	flex-grow: 1;
-}
-
-#line-1 {
-	position: absolute;
-	width: 32vw;
-	height: 0.2px;
-	top: 7.5%;
-	left: 3%;
-	border: 0.1px solid rgba(255,255,255, 0.3);
-}
-
-#line-2 {
-	position: absolute;
-	width: 32vw;
-	height: 0.2px;
-	top: 7.5%;
-	right: 3%;
-	border: 0.1px solid rgba(255,255,255, 0.3);
 }
