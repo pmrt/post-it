@@ -1,7 +1,7 @@
 class Board {
 
-	constructor(){
-
+	constructor(title) {
+		this.title = title || 'My Post-It Board';
 	}
 
 }
