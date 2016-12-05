@@ -1,17 +1,71 @@
+/*
+PostIt = {
+	board {
+		{ 'element:div.post-it',
+
+			{ 'delbtn:img' },
+			{ 'content:textarea'}
+    	}
+   	}
+}
+
+
+
+PostItView = new $View
+			 .editEnabled = false;
+		     .render(PostIt);
+
+*/
+
 class PostItView {
 
-	constructor() {
+	draw() {
+		/*
+			Draw a new blank Post-It inside the board.
+			Set element.
+			@Return: obj <PostItView>
+		*/
+		// Elements
+		this.element = document.createElement('div');
+		this.delbtn = document.createElement('img');
+		this.content = document.createElement('textarea');
+
+		// Atribs
+		this.delbtn.src = "../resources/vector/trash.svg";
+		this.element.className = 'post-it';
+
+		// Tree
+		this.element.appendChild(this.delbtn);
+		this.element.appendChild(this.content);
+		document.getElementsByClassName('board')[0].appendChild(this.element);
+
+		this.element.obj = this;
+		this.content.obj = this;
+		this.editEnabled = false;
+
+		return this.element;
 	}
+
+	editActive() {
+		this.editEnabled = true;
+		this.content.focus();
+
+	}
+
+	editInactive() {
+		this.editEnabled = false;
+	}
+}
+
+class BoardView {
 
 	draw() {
-		let me = document.createElement('div');
-		let content = document.createElement('p');
-		let delbtn = document.createElement('img');
+		this.element = document.createElement('div');
+		this.element.className = 'board flex-wrapper';
 
-		me.className = 'post-it';
+		document.body.appendChild(this.element);
 
-		me.appendChild(content);
-		me.appendChild(delbtn);
-		document.getElementsByClassName('board')[0].appendChild(me);
+		return this.element;
 	}
+
 }

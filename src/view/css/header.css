@@ -36,11 +36,13 @@
 }
 
 ellipse {
+	transition: ease-out 0.3s;
 	fill-opacity: 0;
 	stroke:white;
 }
 
 ellipse:hover {
+	transition: ease-in 0.3s;
 	fill-opacity: 1;
 	fill: rgba(255, 255, 255, 0.2);
 }
